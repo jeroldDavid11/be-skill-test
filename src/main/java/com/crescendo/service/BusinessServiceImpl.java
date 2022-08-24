@@ -28,7 +28,7 @@ public class BusinessServiceImpl implements IBusinessService {
 	
 	/*Delete*/
 	public String deleteBusiness(long id) {
-		businessRepository.deleteById(Long.valueOf(id));
+		businessRepository.deleteById(id);
 		return "Entity Business Deleted" + id ;
 	}
 
