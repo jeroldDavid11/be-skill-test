@@ -25,3 +25,14 @@ Delete Business
 ===========
 
 ![Alt text](./src/main/resources/img/Screensho5.jpg?raw=true "Optional Title")
+
+
+Create Review
+===========
+
+![Alt text](./src/main/resources/img/Screenshot-6.jpg?raw=true "Optional Title")
+
+Get All Reviews
+===========
+
+![Alt text](./src/main/resources/img/Screenshot-7.jpg?raw=true "Optional Title")
