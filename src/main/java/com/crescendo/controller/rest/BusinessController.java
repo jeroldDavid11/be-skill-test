@@ -22,27 +22,27 @@ public class BusinessController {
 	  BusinessServiceImpl businessService;
 	
 	
-	  @RequestMapping(value="/business", method=RequestMethod.GET)
+	  @RequestMapping(value="/businesses", method=RequestMethod.GET)
 	  public ResponseEntity<Object> GetAllBusiness() throws IOException {
 		    return new ResponseEntity<Object>(businessService.getAllBusiness(), HttpStatus.OK);
 	  }
 	  
-	  @RequestMapping(value="/business/{id}", method=RequestMethod.GET)
+	  @RequestMapping(value="/businesses/{id}", method=RequestMethod.GET)
 	  public ResponseEntity<Object> GetSpecificBusiness(@PathVariable("id") long id) throws IOException {
 		    return new ResponseEntity<Object>(businessService.getABusiness(id), HttpStatus.OK);
 	  }
 	  
-	  @RequestMapping(value="/business", method=RequestMethod.POST)
+	  @RequestMapping(value="/businesses", method=RequestMethod.POST)
 	  public ResponseEntity<Object> CreateNewBusiness(@RequestBody Business business) throws IOException {
 		    return new ResponseEntity<Object>(businessService.createnNewBusiness(business), HttpStatus.OK);
 	  }
 	  
-	  @RequestMapping(value="/business/{id}", method=RequestMethod.PUT)
+	  @RequestMapping(value="/businesses/{id}", method=RequestMethod.PUT)
 	  public ResponseEntity<Object> UpdateBusiness(@RequestBody Business business,@PathVariable("id") int id) throws IOException {
 		    return new ResponseEntity<Object>(businessService.updateBusiness(id,business), HttpStatus.OK);
 	  }
 	  
-	  @RequestMapping(value="/business/{id}", method=RequestMethod.DELETE)
+	  @RequestMapping(value="/businesses/{id}", method=RequestMethod.DELETE)
 	  public ResponseEntity<Object> DeleteBusiness(@PathVariable("id") int id) throws IOException {
 		    return new ResponseEntity<Object>(businessService.deleteBusiness(id), HttpStatus.OK);
 	  }
