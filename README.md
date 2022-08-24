@@ -1,199 +1,27 @@
 # be-skill-test
  SpringMVC be-skill-test
 
+Create Business
+===========
  
- 
- {
-	"info": {
-		"_postman_id": "f7cd468a-9984-43ad-b705-0779ab884687",
-		"name": "skill-test-cases",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-	},
-	"item": [
-		{
-			"name": "Business",
-			"item": [
-				{
-					"name": "Create Business",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"businessName\": \"My Business\",\r\n    \"address\": \"Just random address\",\r\n    \"phone\": \"111-111-111\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8080/api/businesses/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"businesses",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get All Business",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/businesses",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"businesses"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get All Business by Id",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/businesses/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"businesses",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Update Business",
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"businessName\": \"My Business\",\r\n    \"address\": \"Just random address\",\r\n    \"phone\": \"222-222-222\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8080/api/businesses/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"businesses",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Delete Business",
-					"request": {
-						"method": "DELETE",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/businesses/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"businesses",
-								"1"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "Review",
-			"item": [
-				{
-					"name": "Create Review",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"text\" : \"My review on a sample business\",\r\n    \"rating\" : \"5\",\r\n    \"createdDateTime\" : \"2022-08-09T19:00:00\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8080/api/businesses/1/reviews",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"businesses",
-								"1",
-								"reviews"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get All Reviews",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/api/businesses/1/reviews",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"businesses",
-								"1",
-								"reviews"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		}
-	]
-}
+![Alt text](./src/main/resources/img/Screenshot-1.jpg?raw=true "Optional Title")
+
+Get All Business
+===========
+
+![Alt text](./src/main/resources/img/Screenshot-2.jpg?raw=true "Optional Title")
+
+Get All Business by Id
+===========
+
+![Alt text](./src/main/resources/img/Screenshot-3.jpg?raw=true "Optional Title")
+
+Update Business
+===========
+
+![Alt text](./src/main/resources/img/Screenshot-4.jpg?raw=true "Optional Title")
+
+Delete Business
+===========
+
+![Alt text](./src/main/resources/img/Screensho5.jpg?raw=true "Optional Title")
